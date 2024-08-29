@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    image: php:8.1-apache
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html
